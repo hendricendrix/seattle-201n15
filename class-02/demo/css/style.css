@@ -1,0 +1,15 @@
+body{
+  background: bisque;
+}
+
+ol {
+  color: blue;
+}
+
+ul li {
+  background: pink;
+}
+
+.second {
+  font-weight: bold;
+}
