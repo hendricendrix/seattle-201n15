@@ -29,7 +29,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+  var totalSum = a * b;
+  console.log('checking total sum',totalSum)
+  var stringNext = `The product of ${a} and ${b} is ${totalSum}.`;
+  console.log('checking string in Multiply',stringNext)
+  return [totalSum, stringNext];
 }
 
 // Here is the test for multiply(); uncomment it to run it
