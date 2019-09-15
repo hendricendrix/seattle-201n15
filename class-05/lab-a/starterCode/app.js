@@ -84,9 +84,9 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-  var sumHow= sum(testArray[0],testArray[1])[0];
-  var sumOf= sum(sumHow, testArray[2])[0];
-  var workString= `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${sumOf} is their sum.`;
+  var sumHow= sum(sumArr[0],sumArr[1])[0];
+  var sumOf= sum(sumHow, sumArr[2])[0];
+  var workString= `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sumOf} is their sum.`;
   return [sumOf, workString];
 }
 
@@ -108,12 +108,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-  var sumProduct= multiply(testArray[0],testArray[1])[0];
-  var multiLast= multiply(testArray[2], sumProduct)[0];
+  var sumProduct= multiply(multArr[0],multArr[1])[0];
+  var multiLast= multiply(multArr[2], sumProduct)[0];
   console.log('checking product of array',multiLast);
   
   console.log('checking total of sum product', sumProduct);
-  var afterString= `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${multiLast}.`;
+  var afterString= `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${multiLast}.`;
     return [multiLast, afterString]; 
 }
 

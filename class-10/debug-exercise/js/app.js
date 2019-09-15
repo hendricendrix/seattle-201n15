@@ -42,10 +42,10 @@ function buildTasks() {
 function loadCurrentPoints(){
   let tempPoints = localStorage.getItem('points');
   if(tempPoints){
-    currentPoints = parseInt(JSON.parse(tempPoints));
+    var currentPoints = parseInt(JSON.parse(tempPoints));
   }
   else{
-    currentPoints = 0;
+   var currentPoints = 0;
   }
 }
 loadCurrentPoints();
